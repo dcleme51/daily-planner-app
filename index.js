@@ -17,7 +17,12 @@ document.getElementById("currentDay").textContent = currentTime;
 
 
 // Save the event in local storage when the save button is clicked in that timeblock.
-
+$(".saveBtn").on("click", function(){
+let text = $(this).siblings(".description").val();
+console.log("text=", text);
+let hour = $(this).parent().attr("id");
+console.log("hour=", hour);
+});
 
 
 
