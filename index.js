@@ -11,12 +11,7 @@ document.getElementById("currentDay").textContent = currentTime;
 
 
 
-// Allow a user to enter an event when they click a timeblock
-
-
-
-
-// Save the event in local storage when the save button is clicked in that timeblock.
+// Allow a user to enter an event when they click a timeblock and save the event in local storage when the save button is clicked in that timeblock.
 $(".saveBtn").on("click", function(){
 let text = $(this).siblings(".description").val();
 console.log("text=", text);
@@ -26,7 +21,7 @@ console.log("hour=", hour);
 localStorage.setItem(hour, text);
 });
 
-
-
-
 // Persist events between refreshes of a page
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
