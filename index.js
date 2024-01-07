@@ -8,8 +8,18 @@ document.getElementById("currentDay").textContent = currentTime;
 
 
 // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+function updateColour(){
+    let currentTime = dayjs().hour();
+
+    $(".time-block").each(function(){
+        let apptTime = parseInt($(this).attr("id"));
+        console.log("apptTime=", apptTime);  
+    })
 
 
+}
+
+updateColour();
 
 // Allow a user to enter an event when they click a timeblock and save the event in local storage when the save button is clicked in that timeblock.
 $(".saveBtn").on("click", function(){
