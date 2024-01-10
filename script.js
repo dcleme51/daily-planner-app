@@ -3,9 +3,7 @@ var currentTime = dayjs().format("DD/MM/YYYY");
 document.getElementById("currentDay").textContent = currentTime;
 
 
-// Present timeblocks for standard business hours when the user scrolls down.
-
-// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+// Present timeblocks for standard business hours when the user scrolls down. Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 function updateColour(){
     let currentTime = dayjs().hour();
 
